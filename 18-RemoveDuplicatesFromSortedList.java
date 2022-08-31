@@ -5,7 +5,6 @@ class Solution {
         if(head==null || head.next==null) return head;
         ListNode iter = head.next;
         ListNode iter2 = head;
-        boolean isDup = false;
         while(iter!=null){
             if(iter2.val!=iter.val){
                 iter2.next = iter;
